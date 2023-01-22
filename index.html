@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <title>ABC Production</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: "#FECC02",
+                        black: "#131313",
+                        gray: "#4E4E4E",
+                    },
+                    fontFamily: {
+                        bebas: ["Bebas Neue", "cursive"],
+                        montserrat: ["Montserrat", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        bannerimage: "url('./images/banner.png')"
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-between container mx-auto font-bebas py-4">
+            <h1 class="text-2xl font-bold">ABC Production</h1>
+            <ul class="flex justify-between text-lg uppercase font-semibold gap-8">
+                <li>About Us</li>
+                <li>Movies</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+        <!-- nav END -->
+        <!-- Banner Start -->
+        <section class="h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover">
+            <div class="container mx-auto flex items-center">
+                <div class="font-bebas">
+                    <h5 class="uppercase text-white  text-lg">Movie production studio</h5>
+                    <h1 class="uppercase text-7xl text-white">films made to</h1>
+                    <h1 class="uppercase text-7xl text-yellow">Perfection</h1>
+                    <p class="max-w-lg font-montserrat text-white my-10">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Repellendus voluptate
+                        voluptates cupiditate,
+                        eos minus neque aliquid cum. Officiis, molestias deleniti.</p>
+                    <button
+                        class="border-2 border-white py-2 px-3 text-white text-lg hover:bg-yellow hover:border-yellow-400 hover:text-black transition-all">DISCOVER
+                        MORE</button>
+                </div>
+            </div>
+        </section>
+        <!-- banner END -->
+
+    </header>
+    <!-- header END  -->
+
+    <!-- main body -->
+    <main class="">
+        <section class="py-40">
+            <div class="border-2 border-black w-full max-w-7xl mx-auto">
+                <div class="lg:flex p-5 mb-10">
+                    <div
+                        class="w-full lg:w-1/2 bg-red-500 h-[500px] bg-[url('./images/camera-man.jpg')] bg-cover bg-center flex justify-center items-end">
+                        <h1
+                            class="bg-white text-black text-2xl font-bebas w-full mx-5 text-center px-5 py-3 rounded-md -mb-7 shadow-lg">
+                            23 YEARS of EXPERIENCE</h1>
+                    </div>
+                    <div class="w-full lg:w-1/2 p-5 font-bebas">
+                        <h2 class="text-lg">About us</h2>
+                        <h1 class="text-7xl">Filming Experience</h1>
+                        <h1 class="text-7xl">Just Got Better</h1>
+                        <p class="font-montserrat mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Consequatur recusandae praesentium
+                            voluptates consectetur maxime officia facere saepe quo, minima non repudiandae dolorem odit
+                            ratione laborum ducimus architecto! Ipsa, corrupti deleniti.</p>
+                        <button
+                            class="font-bebas border-2 border-black py-2 px-3 text-black text0lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">Discover
+                            More</button>
+                    </div>
+                </div>
+                <div class="grid md:grid-cols-3 p-5 gap-5">
+                    <div>
+                        <div class="bg-black h-1.5 w-full mb-2"></div>
+                        <h1 class="text-6xl font-bebas">OUR VISION</h1>
+                        <p class="text-lg font-monserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas quis, cupiditate beatae
+                            ipsa nisi quibusdam?</p>
+
+                    </div>
+                    <div>
+                        <div class="bg-black h-1.5 w-full mb-2"></div>
+                        <h1 class="text-6xl font-bebas">OUR MISSION</h1>
+                        <p class="text-lg font-monserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas quis, cupiditate beatae
+                            ipsa nisi quibusdam?</p>
+
+                    </div>
+                    <div>
+                        <div class="bg-black h-1.5 w-full mb-2"></div>
+                        <h1 class="text-6xl font-bebas">OUR MOTTO</h1>
+                        <p class="text-lg font-monserrat">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptas quis, cupiditate beatae
+                            ipsa nisi quibusdam?</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about us END -->
+        <!-- movie collection -->
+        <section class="bg-gray py-20 px-5">
+            <div class="w-full max-w-7xl mx-auto mb-10">
+                <h2 class="font-bebas text-white">OUR MOVIES</h2>
+                <div class="flex justify-between items-center">
+                    <h1 class="text-7xl text-white font-bebas">Movie collection</h1>
+                    <button
+                        class="font-bebas border-2 border-white py-2 px-3 text-white text-lg hover:bg-yellow hover:border-yellow hover:text-black transition-all">
+                        Discover more
+                    </button>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 w-full max-w-7xl mx-auto gap-5">
+                <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+                    <div
+                        class="group transition-all bg-[url('./images/inception.jpg')] h-full w-full bg-cover flex justify-center items-center">
+                        <h1 class="text-red-500 font-bebas text-4xl hidden group-hover:block">
+                            Inception
+                        </h1>
+                    </div>
+                </div>
+                <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+                    <div class="bg-[url('./images/fractured.jpg')] h-full w-full bg-cover"></div>
+                </div>
+                <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+                    <div class="bg-[url('./images/interstellar.jpg')] h-full w-full bg-cover"></div>
+                </div>
+                <div class="border-2 border-white h-[700px] md:h-[550px] lg:h-[400px] p-5">
+                    <div class="bg-[url('./images/tenet.jpg')] h-full w-full bg-cover"></div>
+                </div>
+            </div>
+        </section>
+        <!-- movie collection END -->
+        <!-- service offer -->
+        <section class="py-20">
+            <div class="w-full max-w-7xl mx-auto my-14 text-center">
+                <h3 class="font-bebas">SERVICES</h3>
+                <h1 class="text-7xl font-bebas my-4 mb-14">WHAT WE OFFER</h1>
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 justify-items-center gap-y-8">
+                    <div class="border-2 border-black w-64 p-4 text-center grid justify-items-center">
+                        <div class="w-28 py-4"><img src="images/icons/camera.png" alt=""></div>
+                        <h3 class="font-bebas my-2 font-semibold">MOVIES DIRECTOR</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, deserunt quos provident
+                            dicta
+                            eos eveniet!</p>
+                    </div>
+                    <div class="border-2 border-black w-64 p-4 text-center grid justify-items-center">
+                        <div class="w-24 py-4"><img src="images/icons/3d-glasss.png" alt=""></div>
+                        <h3 class="font-bebas my-2 font-semibold">3D MOVIES</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, deserunt quos provident
+                            dicta
+                            eos eveniet!</p>
+                    </div>
+                    <div class="border-2 border-black w-64 p-4 text-center grid justify-items-center">
+                        <div class="w-24 py-4"><img src="images/icons/film.png" alt=""></div>
+                        <h3 class="font-bebas my-2 font-semibold">STUDIO PRODUCTION</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, deserunt quos provident
+                            dicta
+                            eos eveniet!</p>
+                    </div>
+                    <div class="border-2 border-black w-64 p-4 text-center grid justify-items-center">
+                        <div class="w-24 py-4"><img src="images/icons/director-chair.png" alt=""></div>
+                        <h3 class="font-bebas my-2 font-semibold">FILM MAKER</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, deserunt quos provident
+                            dicta
+                            eos eveniet!</p>
+                    </div>
+                    <div class="border-2 border-black w-64 p-4 text-center grid justify-items-center">
+                        <div class="w-24 py-4"><img src="images/icons/cut-board.png" alt=""></div>
+                        <h3 class="font-bebas my-2 font-semibold">MOVIE PRODUCTION</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, deserunt quos provident
+                            dicta
+                            eos eveniet!</p>
+                    </div>
+                    <div class="border-2 border-black w-64 p-4 text-center grid justify-items-center">
+                        <div class="w-24 py-4"><img src="images/icons/count-down.png" alt=""></div>
+                        <h3 class="font-bebas my-2 font-semibold">ACTOR ACTION</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, deserunt quos provident
+                            dicta
+                            eos eveniet!</p>
+                    </div>
+                    <div class="border-2 border-black w-64 p-4 text-center grid justify-items-center">
+                        <div class="w-24 py-4"><img src="images/icons/rim.png" alt=""></div>
+                        <h3 class="font-bebas my-2 font-semibold">ROLLING PRODUCTION</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, deserunt quos provident
+                            dicta
+                            eos eveniet!</p>
+                    </div>
+                    <div class="border-2 border-black w-64 p-4 text-center grid justify-items-center">
+                        <div class="w-24 py-4"><img src="images/icons/theater.png" alt=""></div>
+                        <h3 class="font-bebas my-2 font-semibold">MOVIE THEATER</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, deserunt quos provident
+                            dicta
+                            eos eveniet!</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <section class="h-auto bg-[url('./images/footer-bg.jpg')] bg-cover">
+            <div class="text-white container mx-auto text-center">
+                <div class="py-16 grid justify-items-center">
+                    <h1 class="uppercase text-7xl text-white font-bebas">ABC PRODUCTION</h1>
+                    <h3 class="font-semibold text-lg">NEXT LEVEL EXPERIENCE</h3>
+                    <p class="w-96 pt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                        mollitia quam
+                        nam.
+                        Tempora, hic
+                        cupiditate!</p>
+                </div>
+                <div class="pb-20">
+                    <h6>Copyright &copy; 2023 ABC Production, All rights reserved. Present by Khalid</h6>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
